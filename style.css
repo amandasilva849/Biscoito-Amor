@@ -1,0 +1,102 @@
+:root {
+  --fundo: #FFF8F3;
+  --marca: #6E3B36;
+  --cta: #9E4F47;
+  --texto: #3E3E3E;
+}
+
+body {
+  margin: 0;
+  font-family: "Playfair Display", Georgia, serif;
+  background: var(--fundo);
+  color: var(--texto);
+}
+
+.hero {
+  text-align: center;
+  padding: 90px 20px;
+  background: #F2CFC3;
+}
+
+.hero h1 {
+  font-size: 3em;
+  color: var(--marca);
+  letter-spacing: 2px;
+}
+
+.slogan {
+  font-style: italic;
+  margin: 15px 0 30px;
+}
+
+.btn {
+  background: var(--cta);
+  color: #fff;
+  padding: 16px 34px;
+  border-radius: 40px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+section {
+  max-width: 1100px;
+  margin: auto;
+  padding: 80px 20px;
+}
+
+h2 {
+  text-align: center;
+  color: var(--marca);
+  font-size: 2.3em;
+  margin-bottom: 40px;
+}
+
+.galeria .cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px,1fr));
+  gap: 25px;
+}
+
+figure {
+  background: #fff;
+  border-radius: 18px;
+  padding: 10px;
+  box-shadow: 0 12px 30px rgba(0,0,0,.15);
+  transition: .4s;
+}
+
+figure:hover {
+  transform: translateY(-8px);
+}
+
+figure img {
+  width: 100%;
+  border-radius: 14px;
+}
+
+figcaption {
+  text-align: center;
+  font-size: .9em;
+  margin-top: 8px;
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  background: #eee;
+}
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: var(--marca);
+  color: #fff;
+  padding: 14px 22px;
+  border-radius: 50px;
+  text-decoration: none;
+  box-shadow: 0 15px 30px rgba(0,0,0,.3);
+}
+.whatsapp-float:hover {
+  background: var(--cta);
+}
